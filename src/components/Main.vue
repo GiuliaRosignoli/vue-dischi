@@ -14,16 +14,28 @@ export default {
     },
     data(){
         return {
-            collections: [
-                {
-                    name: "Innuendo",
-                    singer: "Queen",
-                }
-            ],
+            apiURL: "https://flynn.boolean.careers/exercises/api/array/music",
+            discList: [],
+            loading: true,
+        }
+    },
+    created(){
+        this.getDisc();
+    },
+    methods: {
+        getDisc() {
+            axios.get(this.apiURL)
+            .then(res=>{
+                console.log(res.data)
+            })
+            .catch(err=>{
+                console.log('Error:', err)
+            })
         }
     }
 }
 </script>
+import axios from "axios";
 
 <style lang="scss" scoped>
 @import "../assets/styles/general.scss"; 
