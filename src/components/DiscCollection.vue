@@ -15,11 +15,10 @@
 </template>
 
 <script>
-
-
 export default {
     name: "DiscCollection",
     props: ["detail"],
+
 }
 </script>
 
@@ -32,12 +31,11 @@ export default {
         margin-top: 5rem;
         background-color: rgb(87, 187, 154);
         border: 1px solid purple;
-    }
+        }
     } 
-
-    
 
     .disc {
         height: 80px;
     }
+    
 </style>
