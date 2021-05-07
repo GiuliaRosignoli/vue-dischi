@@ -18,9 +18,7 @@ export default {
 @import "../assets/styles/vars.scss";
 @import "../assets/styles/utilities.scss";
 
-#app {
-    background-color: red;
-}
+
 
 .header {
     background-color: $lighterblue;
