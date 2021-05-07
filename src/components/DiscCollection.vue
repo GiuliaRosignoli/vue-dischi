@@ -1,5 +1,6 @@
 <template>
 <div class="single-disc">
+    <img v-bind:src="detail.poster" alt="detail.title">
     <h2>{{detail.title}}</h2>
     <h3>{{detail.author}}</h3>
     <h4>{{detail.year}}</h4>
@@ -20,9 +21,12 @@ export default {
 <style lang="scss">
 
    .single-disc {
-        flex-basis: 100px;
+       flex-basis: calc(100% / 8 - 10px);
         margin: 20px 0;
         background-color: #fff;
+        img {
+            width: 120px;
+        }
 
     } 
 
