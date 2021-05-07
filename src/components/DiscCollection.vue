@@ -4,7 +4,7 @@
     <h2>{{detail.title}}</h2>
     <h3>{{detail.author}}</h3>
     <h4>{{detail.year}}</h4>
-    <h4>{{detail.genre}}</h4>
+    <h5>{{detail.genre}}</h5>
 </div>
 </template>
 
@@ -18,7 +18,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/styles/general.scss"; 
 @import "../assets/styles/vars.scss";
+@import "../assets/styles/utilities.scss";
+
 
    .single-disc {
         width: calc(100% / 8 - 10px);
@@ -26,8 +29,10 @@ export default {
         background-color: $lighterblue;
         img {
             width: 120px;
+            padding: 10px;
         }
     } 
+
 
     
 </style>
