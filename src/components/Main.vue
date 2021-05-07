@@ -1,6 +1,6 @@
 <template>
     <section class="wrapper">
-        <div class="disc-section flex"> 
+        <div class="disc-section flex"> <!--loop -->
             <DiscCollection v-for="(disc, index) in collections" v-bind:key="index" :detail="disc" />
         </div>
     </section>
