@@ -1,16 +1,9 @@
 <template>
-<div class="discs-container flex">
-    <div class="col"><div class="disc">test</div></div>
-    <div class="col"><div class="disc">test</div></div>
-    <div class="col"><div class="disc">test}</div></div>
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
-    <div class="col"><div class="disc">{{ detail.poster }}</div></div>
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
-
+<div class="single-disc">
+    <h2>{{detail.title}}</h2>
+    <h3>{{detail.author}}</h3>
+    <h4>{{detail.year}}</h4>
+    <h4>{{detail.genre}}</h4>
 </div>
 </template>
 
@@ -26,18 +19,12 @@ export default {
 
 <style lang="scss">
 
-   .discs-container {
-        justify-content: space-around;
-        .col {
-        flex-basis: calc(100% / 8 - 10px);
-        margin-top: 5rem;
-        background-color: rgb(87, 187, 154);
-        border: 1px solid purple;
-        }
+   .single-disc {
+        flex-basis: 100px;
+        margin: 20px 0;
+        background-color: #fff;
+
     } 
 
-    .disc {
-        height: 80px;
-    }
     
 </style>
