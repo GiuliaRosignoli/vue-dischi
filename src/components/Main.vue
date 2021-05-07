@@ -49,10 +49,13 @@ export default {
 @import "../assets/styles/utilities.scss";
 
 .wrapper {
+    width: 100wh;
+    align-items: flex-start;
     height: 600px;
-    background-color: $darkerblue; 
     .disc-section {
+        width: 100wh;
         justify-content: space-around;
+        margin-top: 60px;
     }
 }
 

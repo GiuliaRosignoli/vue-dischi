@@ -10,7 +10,6 @@
 
 <script>
 
-
 export default {
     name: "DiscCollection",
     props: ["detail"],
@@ -19,15 +18,15 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/styles/vars.scss";
 
    .single-disc {
-       flex-basis: calc(100% / 8 - 10px);
+        width: calc(100% / 8 - 10px);
         margin: 20px 0;
-        background-color: #fff;
+        background-color: $lighterblue;
         img {
             width: 120px;
         }
-
     } 
 
     
