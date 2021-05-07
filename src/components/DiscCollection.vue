@@ -29,7 +29,7 @@ export default {
         background-color: $lighterblue;
         img {
             width: 120px;
-            padding: 10px;
+            padding: 12px;
         }
     } 
 
