@@ -1,8 +1,8 @@
 <template>
 <div class="discs-container flex">
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
+    <div class="col"><div class="disc">test</div></div>
+    <div class="col"><div class="disc">test</div></div>
+    <div class="col"><div class="disc">test}</div></div>
     <div class="col"><div class="disc">{{ detail.name }}</div></div>
     <div class="col"><div class="disc">{{ detail.name }}</div></div>
     <div class="col"><div class="disc">{{ detail.name }}</div></div>
@@ -15,6 +15,8 @@
 </template>
 
 <script>
+
+
 export default {
     name: "DiscCollection",
     props: ["detail"],

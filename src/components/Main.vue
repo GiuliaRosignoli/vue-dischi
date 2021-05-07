@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import DiscCollection from "@/components/DiscCollection.vue"
 export default {
     name: "Main",
@@ -44,7 +45,7 @@ import axios from "axios";
 
 .discs {
     height: 600px;
-    background-color: $darkerblue;
+    background-color: $darkerblue; 
 }
 
 
