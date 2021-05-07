@@ -8,7 +8,7 @@
     <div class="col"><div class="disc">{{ detail.name }}</div></div>
     <div class="col"><div class="disc">{{ detail.name }}</div></div>
     <div class="col"><div class="disc">{{ detail.name }}</div></div>
-    <div class="col"><div class="disc">{{ detail.name }}</div></div>
+    <div class="col"><div class="disc">{{ detail.poster }}</div></div>
     <div class="col"><div class="disc">{{ detail.name }}</div></div>
 
 </div>
