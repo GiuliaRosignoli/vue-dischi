@@ -1,11 +1,11 @@
 <template>
-<div class="single-disc">
-    <img v-bind:src="detail.poster" alt="detail.title">
-    <h2>{{detail.title}}</h2>
-    <h3>{{detail.author}}</h3>
-    <h4>{{detail.year}}</h4>
-    <h5>{{detail.genre}}</h5>
-</div>
+    <div class="single-disc">
+        <img v-bind:src="detail.poster" alt="detail.title">
+        <h2>{{detail.title}}</h2>
+        <h3>{{detail.author}}</h3>
+        <h4>{{detail.year}}</h4>
+        <h5>{{detail.genre}}</h5>
+    </div>
 </template>
 
 <script>
