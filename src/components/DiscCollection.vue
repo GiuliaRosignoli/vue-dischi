@@ -24,8 +24,9 @@ export default {
 
 
    .single-disc {
-        width: calc(100% / 8 - 10px);
-        margin: 20px 0;
+        justify-items: center;
+        flex-basis: calc(100% / 8 - 20px);
+        padding-bottom: 10px;
         background-color: $lighterblue;
         img {
             width: 120px;

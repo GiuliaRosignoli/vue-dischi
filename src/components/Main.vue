@@ -51,11 +51,14 @@ export default {
 .wrapper {
     height: 100vh;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     .disc-section {
-        width: 100%;
         justify-content: space-around;
+        flex-wrap:wrap;
+        width: 100%;
         margin-top: 60px;
+        padding: 30px;
     }
 }
 
