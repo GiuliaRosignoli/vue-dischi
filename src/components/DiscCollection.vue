@@ -1,5 +1,5 @@
 <template>
-    <div class="single-disc">
+    <div class="single-disc flex">
         <img v-bind:src="detail.poster" alt="detail.title">
         <h2>{{detail.title}}</h2>
         <h3>{{detail.author}}</h3>
@@ -24,6 +24,9 @@ export default {
 
 
    .single-disc {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
         justify-items: center;
         flex-basis: calc(100% / 8 - 20px);
         padding-bottom: 10px;

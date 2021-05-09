@@ -48,13 +48,13 @@ export default {
 @import "../assets/styles/vars.scss";
 @import "../assets/styles/utilities.scss";
 
+
 .wrapper {
     height: 100vh;
     align-items: flex-start;
     flex-wrap: wrap;
-
     .disc-section {
-        justify-content: space-around;
+        justify-content: center;
         flex-wrap:wrap;
         width: 100%;
         margin-top: 60px;
