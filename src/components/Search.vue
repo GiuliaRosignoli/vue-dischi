@@ -1,12 +1,19 @@
 <template>
   <div class="search">
-      <input type="text">
+      <input type="text" placeholder="Search">
+      <button class="mg">Search</button>
+      <button>Reset</button>
   </div>
 </template>
 
 <script>
 export default {
     name: "Search",
+    data(){
+        return {
+
+        }
+    }
 }
 </script>
 
@@ -21,6 +28,12 @@ export default {
     input {
         height: 1.8rem;
     }
+}
+
+button {
+    margin: 5px;
+    padding: 5px 9px;
+    border-radius: 30%;
 }
 
 </style>
