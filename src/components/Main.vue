@@ -1,5 +1,8 @@
 <template>
     <section class="wrapper">
+        <div>
+            <Search />
+        </div>
         <div class="disc-section flex"> <!--loop -->
             <DiscCollection v-for="(disc, index) in collections" v-bind:key="index" :detail="disc" />
         </div>
@@ -9,12 +12,14 @@
 
 <script>
 import axios from "axios";
-import DiscCollection from "@/components/DiscCollection.vue"
+import DiscCollection from "@/components/DiscCollection.vue";
+import Search from "@/components/Search.vue";
 
 export default {
     name: "Main",
     components: {
         DiscCollection,
+        Search,
     },
     data(){
         return {
@@ -50,7 +55,7 @@ export default {
 
 
 .wrapper {
-    height: calc(100vh - 3.5rem - 60px);
+    height: calc(100vh - 3.5rem );
     align-items: flex-start;
     flex-wrap: wrap;
     .disc-section {
