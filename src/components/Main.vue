@@ -50,7 +50,7 @@ export default {
 
 
 .wrapper {
-    height: 100vh;
+    height: calc(100vh - 3.5rem - 60px);
     align-items: flex-start;
     flex-wrap: wrap;
     .disc-section {
@@ -58,7 +58,7 @@ export default {
         flex-wrap:wrap;
         width: 100%;
         margin-top: 60px;
-        padding: 30px;
+        padding: 15px;
     }
 }
 
