@@ -25,8 +25,19 @@ export default {
         return {
             apiURL: "https://flynn.boolean.careers/exercises/api/array/music",
             collections: [],
+            searchingDiscs: "",
         }
             
+    },
+    computed: {
+        filteredDiscList(){
+            if(this.searchingDiscs === ""){
+                return this.collections
+            }
+            return this.collections.filter(item =>{
+                return item.name.toLowerCase.includes(this.searchingDiscs.toLowerCase());
+            })
+        }
     },
     created(){
         this.getDisc()
@@ -43,7 +54,10 @@ export default {
                 console.log('Error:', err)
             })
         },
-        searchDisc() {
+        searchDisc(text) {
+            console.log("Text inserted: ", text);
+
+            this.searchingDiscs = text;
 
         }
     }

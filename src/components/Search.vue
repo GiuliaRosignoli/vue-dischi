@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-      <input type="text" placeholder="Search Album"  v-model="searchText">
+      <input type="text" placeholder="Search Album"  v-model.trim ="searchText">
       <span class="frame">
           <button class="mg custom-btn btn-8" @click.prevent="$emit('performSearch', searchText)">Search</button>
           <button class="custom-btn btn-8" @click="resetSearch">Reset</button>
