@@ -1,7 +1,7 @@
 <template>
     <section class="wrapper">
         <div>
-            <Search />
+            <Search @performSearch="searchDisc" />
         </div>
         <div class="disc-section flex"> <!--loop -->
             <DiscCollection v-for="(disc, index) in collections" v-bind:key="index" :detail="disc" />
@@ -42,6 +42,9 @@ export default {
             .catch(err=>{
                 console.log('Error:', err)
             })
+        },
+        searchDisc() {
+
         }
     }
 }
